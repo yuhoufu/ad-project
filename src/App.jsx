@@ -1,14 +1,14 @@
-import React,{ Component } from 'react';
-import './style.scss'
+import React, { Component } from 'react';
+import './style.scss';
 
 class App extends Component {
-    render(){
+    render() {
         return (
-             <div className='box'>
+            <div className="box">
                 Hello, React
                 <br />
-                <span>I'm Jack.</span>
-             </div>
+                <span>I am Jack.</span>
+            </div>
         );
     }
 }
