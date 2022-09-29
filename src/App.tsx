@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import './style.scss';
 
-class App extends Component {
+interface Props {};
+
+
+class App extends Component<Props> {
     render() {
         return (
             <div className="box">

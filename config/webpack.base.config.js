@@ -7,7 +7,7 @@ const webpackBaseConfig = {
         filename: '[name].[fullhash:4].js',
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.tsx', '.jsx'],
     },
 
     module: {
@@ -17,11 +17,15 @@ const webpackBaseConfig = {
                 use: 'babel-loader',
             },
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+            },
+            {
                 test: /\.(sc|c)ss/,
                 use: ['style-loader','css-loader','sass-loader']
             },
-        ]
-    }
+        ],
+    },
 };
 
 module.exports = webpackBaseConfig;
